@@ -23,3 +23,25 @@ class MainController: UIViewController {
 
 }
 
+//  Create Subclasses for Problem 2-4 View Controllers
+class Problem2ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Problem 2"
+    }
+}
+
+
+class Problem3ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Problem 3"
+    }
+}
+
+class Problem4ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Problem 4"
+    }
+}
