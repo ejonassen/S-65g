@@ -29,6 +29,10 @@ class Problem2ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Problem 2"
     }
+    @IBAction func RunP2(sender: AnyObject) {
+        OutP2.text = "Problem 2 Output!"
+    }
+    @IBOutlet weak var OutP2: UITextView!
 }
 
 
@@ -37,6 +41,11 @@ class Problem3ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Problem 3"
     }
+    @IBAction func RunP3(sender: AnyObject) {
+        OutP3.text = "Problem 3 Output!"
+    }
+    @IBOutlet weak var OutP3: UITextView!
+    
 }
 
 class Problem4ViewController: UIViewController {
@@ -44,4 +53,8 @@ class Problem4ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Problem 4"
     }
+    @IBAction func RunP4(sender: AnyObject) {
+        OutP4.text = "Problem 4 Output!"
+    }
+    @IBOutlet weak var OutP4: UITextView!
 }
