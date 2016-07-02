@@ -30,7 +30,34 @@ class Problem2ViewController: UIViewController {
         self.title = "Problem 2"
     }
     @IBAction func RunP2(sender: AnyObject) {
-        OutP2.text = "Problem 2 Output!"
+        //OutP2.text = "Problem 2 Output!"
+        
+        // Create a 10x10 array of Bools called "before"
+        let col = 10
+        let row = 10
+        var outcount = 0
+        var incount = 0
+        var alivetotal = 0
+        var before = Array<Array<Bool>>()
+        for _ in 0..<col{
+            before.append(Array(count:row, repeatedValue:false))
+        }
+        // Assign initial values to the array "before"
+        for outer in before{
+            for _ in outer{
+                if arc4random_uniform(3) == 1{
+                    before[outcount][incount] = true
+                    alivetotal += 1
+                }
+                //print(String(incount) + String(before[outcount][incount]))
+                incount += 1
+            }
+            incount = 0
+            outcount += 1
+        }
+        
+        OutP2.text = "Before = " + String(alivetotal)
+        
     }
     @IBOutlet weak var OutP2: UITextView!
 }
