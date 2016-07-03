@@ -79,10 +79,14 @@
                         <viewControllerLayoutGuide type="top" id="ePe-H3-q21"/>
                         <viewControllerLayoutGuide type="bottom" id="O9O-nG-MlR"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hvf-Tz-rOa">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hvf-Tz-rOa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHc-Ew-uWI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.029710735750000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ni4-Dx-2YH">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,12 +105,16 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.029710735754511663" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wOA-yN-26t" firstAttribute="top" secondItem="ni4-Dx-2YH" secondAttribute="bottom" constant="20" id="8ca-lZ-3Qx"/>
+                            <constraint firstItem="IHc-Ew-uWI" firstAttribute="leading" secondItem="hvf-Tz-rOa" secondAttribute="leading" id="Ev1-bn-iYg"/>
                             <constraint firstItem="ni4-Dx-2YH" firstAttribute="centerX" secondItem="hvf-Tz-rOa" secondAttribute="centerX" id="NEj-df-qmk"/>
                             <constraint firstItem="ni4-Dx-2YH" firstAttribute="centerY" secondItem="hvf-Tz-rOa" secondAttribute="centerY" id="X4U-Yi-AKk"/>
+                            <constraint firstAttribute="trailing" secondItem="IHc-Ew-uWI" secondAttribute="trailing" id="aVH-fl-rES"/>
                             <constraint firstItem="wOA-yN-26t" firstAttribute="centerX" secondItem="hvf-Tz-rOa" secondAttribute="centerX" id="aYW-Cp-ERX"/>
+                            <constraint firstItem="IHc-Ew-uWI" firstAttribute="top" secondItem="hvf-Tz-rOa" secondAttribute="top" id="cOa-bu-bXb"/>
+                            <constraint firstAttribute="bottom" secondItem="IHc-Ew-uWI" secondAttribute="bottom" id="mwv-0f-vne"/>
                         </constraints>
                     </view>
                     <connections>
@@ -129,6 +137,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDR-yG-6YM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="0.93849887460000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D8o-CL-dut">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,12 +159,16 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.93849887456700354" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="D8o-CL-dut" firstAttribute="centerY" secondItem="4kL-pA-CCH" secondAttribute="centerY" id="5hv-GY-yvJ"/>
+                            <constraint firstAttribute="trailing" secondItem="rDR-yG-6YM" secondAttribute="trailing" id="NBB-ag-eIa"/>
                             <constraint firstItem="D8o-CL-dut" firstAttribute="centerX" secondItem="4kL-pA-CCH" secondAttribute="centerX" id="O8V-Fe-bMT"/>
+                            <constraint firstAttribute="bottom" secondItem="rDR-yG-6YM" secondAttribute="bottom" id="X8N-Qa-0wb"/>
                             <constraint firstItem="VqA-HE-f5l" firstAttribute="centerX" secondItem="4kL-pA-CCH" secondAttribute="centerX" id="a95-TB-QEZ"/>
                             <constraint firstItem="VqA-HE-f5l" firstAttribute="top" secondItem="D8o-CL-dut" secondAttribute="bottom" constant="20" id="g0z-VV-Mgx"/>
+                            <constraint firstItem="rDR-yG-6YM" firstAttribute="leading" secondItem="4kL-pA-CCH" secondAttribute="leading" id="p2D-dp-4fo"/>
+                            <constraint firstItem="rDR-yG-6YM" firstAttribute="top" secondItem="4kL-pA-CCH" secondAttribute="top" id="ugN-zv-sld"/>
                         </constraints>
                     </view>
                     <connections>
@@ -175,6 +191,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THi-T0-Thc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.024791156070000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SkY-RZ-7Om">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,12 +213,16 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.024791156070232745" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lp6-nU-63F" firstAttribute="top" secondItem="SkY-RZ-7Om" secondAttribute="bottom" constant="20" id="6ZI-YO-pB3"/>
                             <constraint firstItem="SkY-RZ-7Om" firstAttribute="centerY" secondItem="2yz-vS-CiQ" secondAttribute="centerY" id="9NQ-9N-TbC"/>
+                            <constraint firstItem="THi-T0-Thc" firstAttribute="top" secondItem="2yz-vS-CiQ" secondAttribute="top" id="9yE-18-6bx"/>
+                            <constraint firstAttribute="bottom" secondItem="THi-T0-Thc" secondAttribute="bottom" id="dZJ-dZ-9wU"/>
                             <constraint firstItem="SkY-RZ-7Om" firstAttribute="centerX" secondItem="2yz-vS-CiQ" secondAttribute="centerX" id="gP6-Cw-dxL"/>
+                            <constraint firstItem="THi-T0-Thc" firstAttribute="leading" secondItem="2yz-vS-CiQ" secondAttribute="leading" id="idh-57-JRx"/>
                             <constraint firstItem="Lp6-nU-63F" firstAttribute="centerX" secondItem="2yz-vS-CiQ" secondAttribute="centerX" id="xnE-sK-ayh"/>
+                            <constraint firstAttribute="trailing" secondItem="THi-T0-Thc" secondAttribute="trailing" id="y2I-rc-HxR"/>
                         </constraints>
                     </view>
                     <connections>
