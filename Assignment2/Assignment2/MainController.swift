@@ -169,7 +169,53 @@ class Problem3ViewController: UIViewController {
         self.title = "Problem 3"
     }
     @IBAction func RunP3(sender: AnyObject) {
-        OutP3.text = "Problem 3 Output!"
+        
+        // create 2d array of bools
+        let col = 10
+        let row = 10
+        
+        var before = Array<Array<Bool>>()
+        for _ in 0..<row{
+            before.append(Array(count:col, repeatedValue:false))
+        }
+        
+        var r = 0
+        var c = 0
+        var beforeAlive = 0
+        var afterAlive = 0
+        
+        // Set initial values
+        for outer in before{
+            for _ in outer{
+                if arc4random_uniform(3) == 1{
+                    before[r][c] = true
+                    beforeAlive += 1
+                }
+                c += 1
+            }
+            c = 0
+            r += 1
+        }
+        // Call to step function for cell logic
+        // After initial setup happens above, the initial array "before" is passed to step
+        var after = step(before)
+        
+        // Simple loop to count cells living in "after," no actual logic
+        r = 0
+        c = 0
+        for first in after{
+            for _ in first{
+                if after[r][c] == true{
+                    afterAlive += 1
+                }
+                c += 1
+            }
+            c = 0
+            r += 1
+        }
+        
+        OutP3.text = ("Before: " + String(beforeAlive) + "\nAfter: " + String(afterAlive))
+
     }
     @IBOutlet weak var OutP3: UITextView!
     
