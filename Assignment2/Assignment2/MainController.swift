@@ -185,6 +185,7 @@ class Problem3ViewController: UIViewController {
         var afterAlive = 0
         
         // Set initial values
+        
         for outer in before{
             for _ in outer{
                 if arc4random_uniform(3) == 1{
