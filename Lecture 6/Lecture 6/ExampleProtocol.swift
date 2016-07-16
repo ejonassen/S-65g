@@ -20,6 +20,7 @@ protocol ExampleDelegateProtocol {
 }
 
 
+
 // A class that inherits from ExampleProtocol (dont actually put these in the same file in practice)
 class Example : ExampleProtocol {
     var rows: UInt = 0 {
